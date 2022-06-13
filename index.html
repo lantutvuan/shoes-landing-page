@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+    <body>
+        <div class="hero-img"></div>
+        <div class="wrapper">
+            <header>
+                <a href="#" class="logo">Shoe<span>Brand</span></a>
+                                                 
+                <nav>
+
+                    <svg class="close" width="24" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0C5.37321 0 0 5.37321 0 12C0 18.6268 5.37321 24 12 24C18.6268 24 24 18.6268 24 12C24 5.37321 18.6268 0 12 0ZM16.4304 16.5589L14.6625 16.5509L12 13.3768L9.34018 16.5482L7.56964 16.5562C7.45179 16.5562 7.35536 16.4625 7.35536 16.342C7.35536 16.2911 7.37411 16.2429 7.40625 16.2027L10.8911 12.0509L7.40625 7.90179C7.37388 7.86253 7.35592 7.81338 7.35536 7.7625C7.35536 7.64464 7.45179 7.54821 7.56964 7.54821L9.34018 7.55625L12 10.7304L14.6598 7.55893L16.4277 7.55089C16.5455 7.55089 16.642 7.64464 16.642 7.76518C16.642 7.81607 16.6232 7.86429 16.5911 7.90446L13.1116 12.0536L16.5938 16.2054C16.6259 16.2455 16.6446 16.2938 16.6446 16.3446C16.6446 16.4625 16.5482 16.5589 16.4304 16.5589Z" fill="black"/>
+                    </svg>
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sneakers</a></li>
+                        <li><a href="#">Players</a></li>
+                    </ul>
+                </nav>
+
+                <svg class="menu" width="48" height="32" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
+                </svg>
+                    
+            </header>
+
+            <section class="hero">
+                <h1>Regain your confidence on the court</h1>
+
+                <p class="subhead">A shoe built with purpose and to take your game to the next level.</p>
+
+                <svg class="down-arrow" width="16" height="132" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
+                </svg>
+                    
+            </section>
+
+            <section class="more-info">
+                <div class="feature">
+                    <div class="content">
+                        <p class="title">Lightweight</p>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt aliquam enim in! Labore vel corrupti amet non dolorem natus animi tempora eius, aliquam iure voluptatibus earum. Sint facere corporis beatae!</p>
+                    </div>
+                    <img src="assets/shoe2.jpg" alt="Another shoe">
+                </div>
+                <div class="feature left">
+                    <div class="content">
+                        <p class="title">Lightweight</p>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt aliquam enim in! Labore vel corrupti amet non dolorem natus animi tempora eius, aliquam iure voluptatibus earum. Sint facere corporis beatae!</p>
+                    </div>
+                    <img src="assets/shoe3.jpg" alt="Another shoe">
+                </div>
+                <div class="feature">
+                    <div class="content">
+                        <p class="title">Lightweight</p>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt aliquam enim in! Labore vel corrupti amet non dolorem natus animi tempora eius, aliquam iure voluptatibus earum. Sint facere corporis beatae!</p>
+                    </div>
+                    <img src="assets/shoe4.jpg" alt="Another shoe">
+                </div>
+            </section>
+        </div>
+
+        <script>
+            const menu = document.querySelector('.menu')
+            const close = document.querySelector('.close')
+            const nav = document.querySelector('nav')
+
+            menu.addEventListener('click', () => {
+                nav.classList.add('open-nav')
+            })
+
+            close.addEventListener('click', () => {
+                nav.classList.remove('open-nav')
+            })
+        </script>
+
+    </body>
+</html>
